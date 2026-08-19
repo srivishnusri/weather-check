@@ -7,7 +7,7 @@ export default async function handler(req, res) {
         });
     }
 
-    const API_KEY = process.env.RAPIDAPI_KEY;
+    const API_KEY = process.env.RapidAPI;
 
     if (!API_KEY) {
         return res.status(500).json({
